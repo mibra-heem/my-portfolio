@@ -12,7 +12,7 @@ const { projects } = Astro.props;
 
 <Section text="Featured Projects" href="projects">
   {
-    projects.map(({ name, summary, image, linkPreview, linkSource }, index) => {
+    projects.map(({ name, summary, image, linkPreview, linkSource, linkTryApk }, index) => {
       const top = 98 + index * 40;
       return (
         <div
@@ -40,15 +40,22 @@ const { projects } = Astro.props;
                 >
                   Preview
                 </a>
+                <a
+                  href={linkTryApk}
+                  target="_blank"
+                  class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                >
+                  Try Apk
+                </a>
               </div>
             </div>
             <div class="flex items-end justify-end overflow-hidden">
               <Image
-                class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-none object-left-top sm:h-[85%] sm:w-full"
+                className="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-fill sm:h-[85%] sm:w-full"
                 src={image}
                 alt={name}
-                width="736"
-                height="483"
+                // width="736"
+                // height="483"
               />
             </div>
           </div>

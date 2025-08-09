@@ -23,13 +23,27 @@ const { projects } = Astro.props;
             style={`top: ${top}px;`}
             class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
           >
-            <div class="bg-difu relative z-[1] grid h-[580px] w-full grid-rows-2 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] sm:grid-cols-2 sm:grid-rows-1 md:h-96">
-              <div class="px-6 pt-12">
-                <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
-                  {name}
-                </h3>
-                <p class="text-base text-neutral">{summary}</p>
-                <div class="flex gap-5 pt-10 text-white">
+            <div class="bg-difu relative z-[1] grid gap-6 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] md:h-96 md:grid-cols-2">
+              {/* Image first on mobile */}
+              <div class="order-1 flex items-center justify-center md:order-2">
+                <Image
+                  class="h-64 w-full rounded-t-2xl object-cover md:h-full md:rounded-ss-xl md:rounded-ee-2xl"
+                  src={image}
+                  alt={name}
+                  width="736"
+                  height="483"
+                />
+              </div>
+
+              {/* Text & Buttons */}
+              <div class="order-2 flex flex-col justify-between px-6 py-6 md:order-1">
+                <div>
+                  <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
+                    {name}
+                  </h3>
+                  <p class="text-base text-neutral">{summary}</p>
+                </div>
+                <div class="flex gap-5 pt-6 text-white">
                   <a
                     href={linkSource}
                     target="_blank"
@@ -44,23 +58,7 @@ const { projects } = Astro.props;
                   >
                     App Demo
                   </a>
-                  {/* <a
-                    href={linkTryApk}
-                    target="_blank"
-                    class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                  >
-                    Try Apk
-                  </a> */}
                 </div>
-              </div>
-              <div class="flex items-end justify-end overflow-hidden">
-                <Image
-                  class="h-full w-[95%] rounded-ss-xl rounded-ee-2xl object-fill sm:h-[85%] sm:w-full"
-                  src={image}
-                  alt={name}
-                  width="736"
-                  height="483"
-                />
               </div>
             </div>
           </div>

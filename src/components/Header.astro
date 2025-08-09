@@ -6,6 +6,7 @@ import type { HeaderProps } from "@types";
 type Props = HeaderProps;
 
 const { siteLogo, navLinks } = Astro.props;
+
 ---
 
 <header
@@ -57,6 +58,8 @@ const { siteLogo, navLinks } = Astro.props;
   const button = document.querySelector("#menu-button");
   const menu = document.querySelector("#main-menu");
   const navItems = document.querySelectorAll("#main-menu > ul > li > a");
+
+  console.log(navItems);
 
   const toggleMenu = () => {
     menu?.classList.toggle("hidden");

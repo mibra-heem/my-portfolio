@@ -44,20 +44,25 @@ const { projects } = Astro.props;
                   <p class="text-base text-neutral">{summary}</p>
                 </div>
                 <div class="flex gap-5 pt-6 text-white">
-                  <a
-                    href={linkSource}
-                    target="_blank"
-                    class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                  >
-                    Source Code
-                  </a>
-                  <a
-                    href={linkPreview}
-                    target="_blank"
-                    class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
-                  >
-                    App Demo
-                  </a>
+                  {linkSource && (
+                    <a
+                      href={linkSource}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Source Code
+                    </a>
+                  )}
+
+                  {linkPreview && (
+                    <a
+                      href={linkPreview}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      App Demo
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

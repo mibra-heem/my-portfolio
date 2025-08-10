@@ -95,6 +95,15 @@ Let’s build something impactful together.`,
       // linkTryApk: "/",
       image: "/mohart-admin-cover.png",
     },
+    {
+      name: "Hugh & Bucks",
+      summary: `A resturant app with 3 sections community (admin), vendor & customer. Admin adds vendor shop which shows to the customers.
+      They can purhase items, for recieving the vendor scans customer's QR Code, on success the customer will receive the item.`,
+      linkPreview: "",
+      linkSource: "",
+      // linkTryApk: "/",
+      image: "/hugh-bucks-cover.png",
+    },
   ],
   education: [
     {

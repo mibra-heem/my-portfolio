@@ -2,6 +2,7 @@
 import Section from "./Section.astro";
 import { Image } from "astro:assets";
 import type { ProjectProps } from "@types";
+import { number } from "astro:schema";
 
 interface Props {
   projects: ProjectProps[];
@@ -17,7 +18,7 @@ const { projects } = Astro.props;
         { name, summary, image, linkPreview, linkSource, linkTryApk },
         index,
       ) => {
-        const top = 98 + index * 40;
+        const top = projects.length > 10 ? 95 + index * 10 : 95 + index * 25 ;
         return (
           <div
             style={`top: ${top}px;`}

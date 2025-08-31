@@ -17,7 +17,7 @@ const { contributions } = Astro.props;
         { name, summary, image, demoLink, linkSource },
         index,
       ) => {
-        const top = 98 + index * 40;
+        const top = contributions.length > 10 ? 95 + index * 10 : 95 + index * 25 ;
         return (
           <div
             style={`top: ${top}px;`}

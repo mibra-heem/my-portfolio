@@ -9,19 +9,23 @@ export const SITE_CONFIG: SiteConfig = {
   siteLogo: "/ibrahim.jpg",
   navLinks: [
     { text: "About", href: "#about" },
+    { text: "Tech Stack", href: "#skills" },
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
+    { text: "Contributions", href: "#contributions" },
     // { text: "Education", href: "#education" },
 
   ],
   socialLinks: [
-    { text: "X", href: "https://x.com/ibraheem_dev" },
-    { text: "LinkedIn", href: "https://www.linkedin.com/in/muhammad-ibrahim-6b9aa4250/" },
-    { text: "Github", href: "https://github.com/mibra-heem" },
-    { text: "Youtube", href: "https://www.youtube.com/@m.ibraheem-dev" },
-    { text: "Instagram", href: "https://www.instagram.com/ibra_heem.dev/" },
-    { text: "Facebook", href: "https://www.facebook.com/profile.php?id=61579216200868" },
-    // { text: "Upwork", href: "https://www.youtube.com/@m.ibra_hem" },
+    { text: "", icon: 'github.svg', href: "https://github.com/mibra-heem" },
+    { text: "", icon: 'linkedin.svg', href: "https://www.linkedin.com/in/muhammad-ibrahim-6b9aa4250/" },
+    { text: "", icon: 'youtube.svg', href: "https://www.youtube.com/@m.ibraheem-dev" },
+    { text: "", icon: 'instagram.svg', href: "https://www.instagram.com/ibra_heem.dev/" },
+    { text: "", icon: 'facebook.svg', href: "https://www.facebook.com/profile.php?id=61579216200868" },
+    { text: "", icon: 'x.svg', href: "https://x.com/ibraheem_dev" },
+    // { text: "Upwork", icon: '', href: "https://www.upwork.com/freelancers/~010bdb8852c27dcff7" },
+    // { text: "Fiverr", icon: '', href: "https://www.fiverr.com/sellers/mibra_heem/edit" },
+
   ],
   socialImage: "/zen-og.png",
   canonicalURL: "https://astro-zen.vercel.app",
@@ -38,12 +42,29 @@ export const SITE_CONTENT: SiteContent = {
   },
   about: {
     description: `
-      Hi, I’m Muhammad Ibrahim — a Flutter Developer with more than 2.5 years of experience crafting high-performance Android apps.
-I specialize in transforming pixel-perfect Figma designs into sleek, responsive UIs and seamlessly integrating RESTful APIs to ensure fluid backend communication. On the server side, I bring hands-on expertise with PHP (Laravel, CodeIgniter) and MySQL, building scalable, secure, and efficient backend systems.
-Driven by a deep passion for clean code and performance optimization, I focus on delivering fast, smooth, and user-centric mobile experiences. Whether it’s improving load times, or architecting robust app structures — I build solutions that are not just functional but delightful to use.
-Let’s build something impactful together.`,
+      Hi, I’m Muhammad Ibrahim — a Flutter Developer with 2.5+ years of experience building high-performance Android apps. I specialize in crafting pixel-perfect, responsive UIs from Figma designs and integrating APIs for seamless backend communication. My expertise spans both client and server side — from authentication and cloud databases to secure file storage, real-time features, and interactive maps. 
+      With strong backend api development skills in Laravel and MySQL, I focus on clean code, scalability, and performance optimization to deliver fast, smooth, and user-centric mobile experiences. Let’s build something impactful together.`,
     image: "/ibrahim.png",
   },
+  skills: [
+    { name: "Android", icon: "android.svg" },
+    { name: "Flutter", icon: "flutter.svg" },
+    { name: "Dart", icon: "dart.svg" },
+    { name: "Firebase", icon: "firebase.svg" },
+    { name: "Supabase", icon: "supabase.svg" },
+    { name: "PHP", icon: "php.svg" },
+    { name: "Laravel", icon: "laravel.svg" },
+    { name: "MySQL", icon: "mysql.svg" },
+    { name: "XAMPP", icon: "xampp.svg" },
+    { name: "GitHub", icon: "github.svg" },
+    { name: "Git Bash", icon: "gitbash.svg" },
+    { name: "Mapbox", icon: "mapbox.svg" },
+    { name: "Stripe", icon: "stripe.svg" },
+    { name: "Agora SDK", icon: "agora.svg" },
+    { name: "Canva", icon: "canva.svg" },
+    { name: "VS Code", icon: "visualstudiocode.svg" },
+
+  ],
   experience: [
     {
       company: "Solution Experts",
@@ -96,6 +117,14 @@ Let’s build something impactful together.`,
       image: "/mohart-admin-cover.png",
     },
     {
+      name: "Reminiss",
+      summary: "Reminiss is a personal memory app that lets users capture experiences and attach them to locations. Built with Supabase authentication and Mapbox maps for seamless saving and revisiting of places.",
+      linkPreview: "",
+      linkSource: "https://github.com/mibra-heem/reminiss",
+      // linkTryApk: "/",
+      image: "/reminiss-cover.png",
+    },
+    {
       name: "Hugh & Bucks",
       summary: `A resturant app with 3 sections community (admin), vendor & customer. Admin adds vendor shop which shows to the customers.
       They can purhase items, for recieving the vendor scans customer's QR Code, on success the customer will receive the item.`,
@@ -103,6 +132,15 @@ Let’s build something impactful together.`,
       linkSource: "",
       // linkTryApk: "/",
       image: "/hugh-bucks-cover.png",
+    },
+  ],
+  contributions: [
+    {
+      name: "Otpify Package",
+      summary: "A highly customizable OTP (One-Time Password) input field widget for Flutter, designed to provide a seamless user experience. The widget includes a resend OTP timer button, ensuring user convenience while maintaining functionality.",
+      demoLink: "https://github.com/mibra-heem/otpify?tab=readme-ov-file#otpify-example",
+      linkSource: "https://pub.dev/packages/otpify",
+      image: "/otpify-cover.png",
     },
   ],
   education: [

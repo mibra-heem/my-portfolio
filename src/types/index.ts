@@ -3,7 +3,7 @@ export interface SiteConfig extends HeaderProps {
   description: string;
   lang: string;
   author: string;
-  socialLinks: { text: string; href: string }[];
+  socialLinks: { text: string; icon: string; href: string }[];
   socialImage: string;
   canonicalURL?: string;
 }
@@ -11,8 +11,10 @@ export interface SiteConfig extends HeaderProps {
 export interface SiteContent {
   hero: HeroProps;
   about: AboutProps;
+  skills: SkillProps[];
   experience: ExperienceProps[];
   projects: ProjectProps[];
+  contributions: ContributionProps[];
   education: EducationProps[];
 }
 
@@ -49,9 +51,22 @@ export interface ProjectProps {
   linkTryApk?: string;
 }
 
+export interface ContributionProps {
+  name: string;
+  summary: string;
+  image: string;
+  demoLink?: string;
+  linkSource?: string;
+}
+
 export interface AboutProps {
   description: string;
   image: string;
+}
+
+export interface SkillProps {
+  name: string;
+  icon: string;
 }
 
 export interface HeaderProps {

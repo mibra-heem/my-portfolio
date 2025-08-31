@@ -1,0 +1,74 @@
+---
+import Section from "./Section.astro";
+import { Image } from "astro:assets";
+import type { ContributionProps } from "@types";
+
+interface Props {
+  contributions: ContributionProps[];
+}
+
+const { contributions } = Astro.props;
+---
+
+<Section text="Community Contributions" href="contributions">
+  {
+    contributions.map(
+      (
+        { name, summary, image, demoLink, linkSource },
+        index,
+      ) => {
+        const top = 98 + index * 40;
+        return (
+          <div
+            style={`top: ${top}px;`}
+            class="sticky mb-12 rounded-2xl border border-neutral/20 bg-black"
+          >
+            <div class="bg-difu relative z-[1] grid gap-6 rounded-2xl bg-[#1c232d]/85 before:absolute before:inset-0 before:z-[-1] before:rounded-2xl before:bg-[url(/raja.png)] before:bg-[length:128px] before:bg-repeat before:opacity-[5%] before:content-[''] md:h-96 md:grid-cols-2">
+              {/* Image first on mobile */}
+              <div class="order-1 flex items-center justify-center md:order-2">
+                <Image
+                  class="h-64 w-full rounded-t-2xl object-contain md:h-full md:rounded-ss-xl md:rounded-ee-2xl"
+                  src={image}
+                  alt={name}
+                  width="736"
+                  height="483"
+                />
+              </div>
+
+              {/* Text & Buttons */}
+              <div class="order-2 flex flex-col justify-between px-6 py-6 md:order-1">
+                <div>
+                  <h3 class="mb-5 font-serif text-3xl font-medium text-primary">
+                    {name}
+                  </h3>
+                  <p class="text-base text-neutral">{summary}</p>
+                </div>
+                <div class="flex gap-5 pt-6 text-white">
+                  {linkSource && (
+                    <a
+                      href={linkSource}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Package Link
+                    </a>
+                  )}
+
+                  {demoLink && (
+                    <a
+                      href={demoLink}
+                      target="_blank"
+                      class="after:relative after:bottom-[-5px] after:content-[url(/external.svg)] hover:underline"
+                    >
+                      Watch Demo
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      },
+    )
+  }
+</Section>

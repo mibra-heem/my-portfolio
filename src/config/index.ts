@@ -27,8 +27,8 @@ export const SITE_CONFIG: SiteConfig = {
     // { text: "Fiverr", icon: '', href: "https://www.fiverr.com/sellers/mibra_heem/edit" },
 
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/portfolio-cover.jpg",
+  canonicalURL: "https://mibraheem-dev.vercel.app/",
 };
 
 export const SITE_CONTENT: SiteContent = {

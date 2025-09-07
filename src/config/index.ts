@@ -11,6 +11,7 @@ export const SITE_CONFIG: SiteConfig = {
     { text: "About", href: "#about" },
     { text: "Tech Stack", href: "#skills" },
     { text: "Experience", href: "#experience" },
+    { text: "Volunteer Work", href: "#volunteer" },
     { text: "Projects", href: "#projects" },
     { text: "Contributions", href: "#contributions" },
     // { text: "Education", href: "#education" },
@@ -68,26 +69,47 @@ export const SITE_CONTENT: SiteContent = {
   experience: [
     {
       company: "Solution Experts",
-      position: "Mobile & Backend Web Developer",
-      startDate: "Feb 2024",
-      endDate: "Dec 2024",
+      position: "Senior Flutter Developer",
+      startDate: "Sep 2025",
+      endDate: "Present",
       summary: [
-        "Built Flutter admin apps for local businesses like electronics and real estate, displaying sales, purchases, and ledger data to support client operations.",
-        "Developed REST APIs using PHP and CodeIgniter for seamless data integration in mobile and web platforms, focusing on financial and inventory metrics.",
-        "Worked on real estate app features to track plots, filer/non-filer data, and blocks, ensuring user-friendly data visualization.",
-        "Worked as a backend developer, enhancing web platforms with efficient API endpoints for business management.",
+        "Managing end-to-end development of a cross-platform mobile app (Android & iOS) using Flutter.",
+        "Designing and implementing portals for admin, staff, dealers, and customers in the New Asia Automobiles app.",
+        "Handling complete app lifecycle including architecture, UI/UX, state management, and API integration without external collaboration."
       ],
     },
-
     {
-      company: "Media Design Expert",
-      position: "Full Stack Flutter Developer - Remote",
-      startDate: "Dec 2024",
-      endDate: "Jan 2025",
+      company: "",
+      position: "Backend Web Developer",
+      startDate: "Oct 2024",
+      endDate: "Dec 2024",
       summary: [
-        "Worked on production-level Flutter mobile applications, handling full development from Figma UI design to backend integration with PHP, and MySQL.",
-        "Redesigned a Flutter app using Figma designs, delivering a polished, user-friendly interface.",
-        "Conducted app testing across design & development stages to ensure functional, performant, and consistent UI/UX.",
+        "Provided backend services in PHP Core and CodeIgniter for admin web portals.",
+        "Implemented modules for sales, purchases, ledger management, balance sheets, and financial reports.",
+        "Optimized database queries and ensured accurate financial data handling in accounting-related systems."
+      ],
+    },
+    {
+      company: "",
+      position: "Flutter Developer",
+      startDate: "Feb 2024",
+      endDate: "Oct 2024",
+      summary: [
+        "Collaborated with a team to develop Android admin dashboards using Flutter.",
+        "Created and integrated REST APIs (PHP) into apps for real estate and electronics management.",
+        "Built features for real estate projects (plots, blocks, filer/non-filer data) and electronics dashboards (sales, purchases, general ledger, summary reports)."
+      ],
+    }   
+  ],
+  volunteer: [
+    {
+      organization: "University Of Gujrat",
+      position: "Team Lead - Hayat App",
+      startDate: "Aug 2025",
+      endDate: "Present",
+      summary: [
+        "Leading a team of developers to design and build the Hayat App, a comprehensive mobile solution for university operations.",
+        "Collaborating with domain lead and guiding the team in translating requirements into technical tasks and development plans.",
       ],
     },
   ],
@@ -158,14 +180,5 @@ export const SITE_CONTENT: SiteContent = {
       endDate: "May 2019",
       location: "Sahiwal, Pakistan",
     },
-    {
-      college: "The Educators",
-      subject: "SSC – Science Group",
-      startDate: "May 2015",
-      endDate: "May 2017",
-      location: "Jaranwala, Pakistan",
-    },
   ],
 };
-
-// #5755ff

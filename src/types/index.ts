@@ -13,6 +13,7 @@ export interface SiteContent {
   about: AboutProps;
   skills: SkillProps[];
   experience: ExperienceProps[];
+  volunteer: VolunteerProps[];
   projects: ProjectProps[];
   contributions: ContributionProps[];
   education: EducationProps[];
@@ -36,6 +37,14 @@ export interface EducationProps {
 
 export interface ExperienceProps {
   company: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  summary: string | string[];
+}
+
+export interface VolunteerProps {
+  organization: string;
   position: string;
   startDate: string;
   endDate: string;

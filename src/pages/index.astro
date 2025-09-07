@@ -4,6 +4,7 @@ import Hero from "@components/Hero.astro";
 import Layout from "@layouts/Layout.astro";
 import Education from "@components/Education.astro";
 import Experience from "@components/Experience.astro";
+import Volunteer from "@components/Volunteer.astro";
 import Projects from "@components/Projects.astro";
 import Contributions from "@components/Contributions.astro";
 import About from "@components/About.astro";
@@ -18,6 +19,7 @@ import "../styles/global.css";
   <About {...SITE_CONTENT.about} name={SITE_CONTENT.hero.name} />
   <Skills skills={SITE_CONTENT.skills} />
   <Experience experience={SITE_CONTENT.experience} />
+  <Volunteer volunteer={SITE_CONTENT.volunteer} />
   <Projects projects={SITE_CONTENT.projects} />
   <Contributions contributions={SITE_CONTENT.contributions} />
   <!-- <Education education={SITE_CONTENT.education} /> -->

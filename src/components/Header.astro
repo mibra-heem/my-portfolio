@@ -10,7 +10,7 @@ const { siteLogo, navLinks } = Astro.props;
 ---
 
 <header
-  class="sticky top-0 z-50 mx-auto flex max-w-5xl animate-slide-in justify-between bg-black px-5 py-6"
+  class="sticky top-0 z-50 mx-auto flex max-w-6xl animate-slide-in justify-between bg-black/90 backdrop-blur-md px-5 py-6 sm:px-8 border-b border-white/5"
 >
   <a href="/" aria-label="Home link">
     <Image
@@ -59,8 +59,6 @@ const { siteLogo, navLinks } = Astro.props;
   const menu = document.querySelector("#main-menu");
   const navItems = document.querySelectorAll("#main-menu > ul > li > a");
 
-  console.log(navItems);
-
   const toggleMenu = () => {
     menu?.classList.toggle("hidden");
     const isHidden = menu?.classList.contains("hidden");
@@ -69,7 +67,12 @@ const { siteLogo, navLinks } = Astro.props;
 
   button?.addEventListener("click", toggleMenu);
   navItems.forEach((item) => {
-    item?.addEventListener("click", toggleMenu);
+    item?.addEventListener("click", () => {
+      if (window.innerWidth < 640) {
+        menu?.classList.add("hidden");
+        button?.setAttribute("aria-expanded", "false");
+      }
+    });
   });
 
   // Update navigation based on scroll position with Intersection Observer

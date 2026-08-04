@@ -40,6 +40,7 @@ export interface ExperienceProps {
   position: string;
   startDate: string;
   endDate: string;
+  location?: string;
   summary: string | string[];
 }
 
@@ -53,8 +54,10 @@ export interface VolunteerProps {
 
 export interface ProjectProps {
   name: string;
+  subtitle?: string;
   summary: string;
-  image: string;
+  image?: string;
+  tags?: string[];
   linkPreview?: string;
   linkSource?: string;
   linkTryApk?: string;
@@ -62,8 +65,10 @@ export interface ProjectProps {
 
 export interface ContributionProps {
   name: string;
+  subtitle?: string;
   summary: string;
-  image: string;
+  image?: string;
+  tags?: string[];
   demoLink?: string;
   linkSource?: string;
 }

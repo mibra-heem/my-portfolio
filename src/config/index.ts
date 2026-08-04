@@ -1,32 +1,29 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Full Stack Flutter Developer",
+  title: "Muhammad Ibrahim — Flutter Developer",
   author: "Muhammad Ibrahim",
   description:
-    "Software Engineer based in Lahore, Pakistan. I specialize in android application design & development.",
+    "Flutter Developer with 3+ years of experience building high-performance cross-platform iOS and Android applications.",
   lang: "en",
   siteLogo: "/ibrahim.jpg",
   navLinks: [
     { text: "About", href: "#about" },
     { text: "Tech Stack", href: "#skills" },
     { text: "Experience", href: "#experience" },
-    { text: "Volunteer Work", href: "#volunteer" },
+    { text: "Leadership", href: "#leadership" },
     { text: "Projects", href: "#projects" },
-    { text: "Contributions", href: "#contributions" },
+    { text: "Open Source", href: "#contributions" },
+    { text: "Contact", href: "#contact" },
     // { text: "Education", href: "#education" },
-
   ],
   socialLinks: [
-    { text: "", icon: 'github.svg', href: "https://github.com/mibra-heem" },
-    { text: "", icon: 'linkedin.svg', href: "https://www.linkedin.com/in/muhammad-ibrahim-6b9aa4250/" },
-    { text: "", icon: 'youtube.svg', href: "https://www.youtube.com/@m.ibraheem-dev" },
-    { text: "", icon: 'instagram.svg', href: "https://www.instagram.com/ibra_heem.dev/" },
-    { text: "", icon: 'facebook.svg', href: "https://www.facebook.com/profile.php?id=61579216200868" },
-    { text: "", icon: 'x.svg', href: "https://x.com/ibraheem_dev" },
-    // { text: "Upwork", icon: '', href: "https://www.upwork.com/freelancers/~010bdb8852c27dcff7" },
-    // { text: "Fiverr", icon: '', href: "https://www.fiverr.com/sellers/mibra_heem/edit" },
-
+    { text: "GitHub", icon: 'github.svg', href: "https://github.com/mibra-heem" },
+    { text: "LinkedIn", icon: 'linkedin.svg', href: "https://linkedin.com/in/mibra-heem-6b9aa4250" },
+    { text: "YouTube", icon: 'youtube.svg', href: "https://www.youtube.com/@m.ibraheem-dev" },
+    { text: "Instagram", icon: 'instagram.svg', href: "https://www.instagram.com/ibra_heem.dev/" },
+    { text: "Facebook", icon: 'facebook.svg', href: "https://www.facebook.com/profile.php?id=61579216200868" },
+    { text: "X", icon: 'x.svg', href: "https://x.com/ibraheem_dev" },
   ],
   socialImage: "/portfolio-cover.jpg",
   canonicalURL: "https://mibraheem-dev.vercel.app/",
@@ -37,14 +34,12 @@ export const SITE_CONTENT: SiteContent = {
     name: "Muhammad Ibrahim",
     specialty: "Flutter Developer",
     summary:
-      "I create sleek, high-performance Flutter apps with smooth UIs and seamless backend integration — built for speed, scalability, and user delight.",
-    tagline: "Bringing ideas to life with clean code and beautiful UI.",
+      "Flutter Developer with 3+ years of experience designing and shipping cross-platform iOS and Android applications. Skilled in clean architecture, scalable state management, and REST API integrations.",
+    tagline: "Bringing ideas to life with clean code and high-performance cross-platform apps.",
     email: "ibraheem.dev.pk@gmail.com",
   },
   about: {
-    description: `
-      Hi, I’m Muhammad Ibrahim — a Flutter Developer with 2.5+ years of experience building high-performance Android apps. I specialize in crafting pixel-perfect, responsive UIs from Figma designs and integrating APIs for seamless backend communication. My expertise spans both client and server side — from authentication and cloud databases to secure file storage, real-time features, and interactive maps. 
-      With strong backend api development skills in Laravel and MySQL, I focus on clean code, scalability, and performance optimization to deliver fast, smooth, and user-centric mobile experiences. Let’s build something impactful together.`,
+    description: `Hi, I’m Muhammad Ibrahim — a Flutter Developer with 3+ years of experience designing and shipping cross-platform iOS and Android applications. Skilled in clean architecture, scalable state management, and complex third-party REST API integrations. I handle the core app structure from scratch, manage developer workflows, and focus on delivering smooth user experiences. Experienced across the full lifecycle of a project, from initial setup to pushing updates live on the App Store and Google Play.`,
     image: "/ibrahim.png",
   },
   skills: [
@@ -55,103 +50,133 @@ export const SITE_CONTENT: SiteContent = {
     { name: "MySQL", icon: "mysql.svg" },
     { name: "GitHub", icon: "github.svg" },
     { name: "Canva", icon: "canva.svg" },
-    { name: "VS Code", icon: "visualstudiocode.svg" },
-
+    { name: "Antigravity", icon: "antigravity.svg" },
   ],
   experience: [
     {
       company: "Solution Experts",
-      position: "Senior Flutter Developer",
+      position: "Lead Flutter Developer",
       startDate: "Sep 2025",
       endDate: "Present",
+      location: "Lahore, Pakistan",
       summary: [
-        "Managing end-to-end development of a cross-platform mobile app (Android & iOS) using Flutter.",
-        "Designing and implementing portals for admin, staff, dealers, and customers in the New Asia Automobiles app.",
-        "Handling complete app lifecycle including architecture, UI/UX, state management, and API integration without external collaboration."
+        "Managing a team of developers while handling app structure and working on multiple client projects simultaneously.",
+        "Introduced Clean Architecture and consistent state management across all projects, improving code quality and accelerating feature delivery.",
+        "Refactored legacy database logic by replacing bulk historical data loads with an optimized fetching model, reducing load times from 15s to under 2s.",
+        "Managed full development lifecycle including App Store and Google Play submission, build configuration, and live production deployment."
       ],
     },
     {
-      company: "",
-      position: "Backend Web Developer",
-      startDate: "Oct 2024",
-      endDate: "Dec 2024",
-      summary: [
-        "Provided backend services in PHP Core and CodeIgniter for admin web portals.",
-        "Implemented modules for sales, purchases, ledger management, balance sheets, and financial reports.",
-        "Optimized database queries and ensured accurate financial data handling in accounting-related systems."
-      ],
-    },
-    {
-      company: "",
+      company: "Media Expert Design",
       position: "Flutter Developer",
-      startDate: "Feb 2024",
-      endDate: "Oct 2024",
+      startDate: "Dec 2024",
+      endDate: "Jan 2025",
+      location: "Remote (UAE)",
       summary: [
-        "Collaborated with a team to develop Android admin dashboards using Flutter.",
-        "Created and integrated REST APIs (PHP) into apps for real estate and electronics management.",
-        "Built features for real estate projects (plots, blocks, filer/non-filer data) and electronics dashboards (sales, purchases, general ledger, summary reports)."
+        "Converted Figma designs into pixel-perfect Flutter UIs with full responsiveness across different screen sizes and platforms.",
+        "Built and integrated custom RESTful APIs, managing the connection between mobile frontend and backend services with robust error handling.",
+        "Collaborated remotely with cross-functional development teams to deliver UI updates, feature additions, and application improvements on schedule."
       ],
-    }   
+    },
+    {
+      company: "Solution Experts",
+      position: "Flutter & Backend Developer Intern",
+      startDate: "Mar 2024",
+      endDate: "Dec 2024",
+      location: "Lahore, Pakistan",
+      summary: [
+        "Contributed to core Flutter features for ERP mobile applications, gaining hands-on experience in production-grade development.",
+        "Stepped into backend development using PHP and CodeIgniter, writing and optimizing database queries that improved ERP response times.",
+        "Worked across both mobile and backend systems, building REST APIs and subsequently integrating them into the mobile frontend — strengthening full-stack development capability.",
+        "Resolved client-reported bugs and issues, improving overall application stability and user experience."
+      ],
+    }
   ],
   volunteer: [
     {
-      organization: "University Of Gujrat",
-      position: "Team Lead - Hayat App",
+      organization: "University of Gujrat",
+      position: "Team Lead – Hayat App",
       startDate: "Aug 2025",
       endDate: "Present",
       summary: [
-        "Leading a team of developers to design and build the Hayat App, a comprehensive mobile solution for university operations.",
-        "Collaborating with domain lead and guiding the team in translating requirements into technical tasks and development plans.",
+        "Leading a cross-functional team of developers to design and build Hayat App, a mobile solution for university operations and student services.",
+        "Translating stakeholder requirements into structured technical tasks, sprint plans, and Agile development workflows.",
+        "Coordinating team efforts across UI design, backend development, and API integration to ensure timely and high-quality feature delivery."
       ],
     },
   ],
   projects: [
     {
+      name: "APC System",
+      subtitle: "Pest Control Field Management",
+      summary: "Developed a pest control management application using Flutter for the mobile app and PHP/CodeIgniter for backend APIs. Integrated Google Calendar API, Google Sign-In, Google Maps, role-based access control, and live background location tracking for field technicians.",
+      tags: ["Flutter", "CodeIgniter", "Google Maps", "REST API", "Live Tracking"],
+      linkPreview: "https://play.google.com/store",
+      image: "",
+    },
+    {
+      name: "Multynet",
+      subtitle: "Product Scanner & Operations",
+      summary: "Revamped a multi-role product scanning application for Admins and Salespersons with polished UI/UX and optimized data-fetching. Reduced dashboard load times by over 80% (15s to under 2s) through architectural refactoring and efficient API query design.",
+      tags: ["Flutter", "Clean Architecture", "API Optimization", "QR/Barcode"],
+      image: "",
+    },
+    {
+      name: "Ramza",
+      subtitle: "EV Operations Platform",
+      summary: "Developed a multi-role after-sales management platform for an electric scooter company supporting Admin, Dealer, Customer, and Technician workflows. Implemented warranty management, vehicle inventory tracking, appointment scheduling, and technician assignment.",
+      tags: ["Flutter", "EV Platform", "State Management", "Role-Based Access"],
+      image: "",
+    },
+    {
       name: "Mustye",
+      subtitle: "Real-time Chat & Audio Calling",
       summary: "A real-time chat app with Firebase Auth, Firestore messaging, message seen status, profile customization, contact management, and Agora-based audio calling. Laravel handles backend APIs.",
+      tags: ["Flutter", "Firebase", "Agora SDK", "Laravel API"],
       linkPreview: "https://github.com/mibra-heem/chat_app_flutter/tree/main?tab=readme-ov-file#-video-demo-",
       linkSource: "https://github.com/mibra-heem/chat_app_flutter",
-      // linkTryApk: "/",
       image: "/mustye-cover.png",
     },
     {
       name: "Mohart",
-      summary: "This e-commerce app offers a smooth shopping experience, like product browsing, detailed product pages, a modern checkout flow, Stripe integrated for online payments. User can manage cart and securely place orders.",
+      subtitle: "Full-Stack eCommerce Store",
+      summary: "Offers a smooth eCommerce shopping experience with product browsing, detailed product pages, a modern checkout flow, and Stripe integrated for online payments connected to a Laravel backend.",
+      tags: ["Flutter", "Stripe Payment", "Laravel", "Cart Management"],
       linkPreview: "https://github.com/mibra-heem/ecommerce-app?tab=readme-ov-file#-video-demo-",
       linkSource: "https://github.com/mibra-heem/ecommerce-app",
-      // linkTryApk: "/",
       image: "/mohart-cover.png",
     },
     {
       name: "Mohart Admin",
-      summary: "Mohart Admin App is a Flutter-based eCommerce admin panel for managing products, categories, and banners with real-time Laravel backend integration.",
+      subtitle: "eCommerce Admin Management Panel",
+      summary: "Flutter-based eCommerce admin panel for managing products, categories, and promotional banners with real-time Laravel backend integration.",
+      tags: ["Flutter", "Admin Panel", "Laravel API", "Product Management"],
       linkPreview: "https://github.com/mibra-heem/ecommerce_admin_app?tab=readme-ov-file#-video-demo-",
       linkSource: "https://github.com/mibra-heem/ecommerce_admin_app",
-      // linkTryApk: "/",
       image: "/mohart-admin-cover.png",
     },
     {
       name: "Reminiss",
+      subtitle: "Personal Memory & Location Mapping",
       summary: "Reminiss is a personal memory app that lets users capture experiences and attach them to locations. Built with Supabase authentication and Mapbox maps for seamless saving and revisiting of places.",
-      linkPreview: "",
+      tags: ["Flutter", "Supabase", "Mapbox Maps", "Auth"],
       linkSource: "https://github.com/mibra-heem/reminiss",
-      // linkTryApk: "/",
       image: "/reminiss-cover.png",
     },
     {
       name: "Hugh & Bucks",
-      summary: `A resturant app with 3 sections community (admin), vendor & customer. Admin adds vendor shop which shows to the customers.
-      They can purhase items, for recieving the vendor scans customer's QR Code, on success the customer will receive the item.`,
-      linkPreview: "",
-      linkSource: "",
-      // linkTryApk: "/",
+      subtitle: "Restaurant & QR Redemption App",
+      summary: "A restaurant app with 3 sections: community (admin), vendor & customer. Vendors scan customer QR codes to redeem items on success.",
+      tags: ["Flutter", "QR Scanner", "Multi-role", "Vendor App"],
       image: "/hugh-bucks-cover.png",
     },
   ],
   contributions: [
     {
       name: "Otpify Package",
-      summary: "A highly customizable OTP (One-Time Password) input field widget for Flutter, designed to provide a seamless user experience. The widget includes a resend OTP timer button, ensuring user convenience while maintaining functionality.",
+      subtitle: "Open-Source Flutter OTP Input Widget",
+      summary: "Developed and published Otpify on Pub.dev: a highly customizable OTP input widget for authentication workflows in Flutter. Achieved 120+ downloads within 3 days of release. Features adaptive UI, configurable field styles, built-in resend timer, and completion callbacks.",
+      tags: ["Flutter Package", "Pub.dev", "Dart", "Open Source"],
       demoLink: "https://github.com/mibra-heem/otpify?tab=readme-ov-file#otpify-example",
       linkSource: "https://pub.dev/packages/otpify",
       image: "/otpify-cover.png",
